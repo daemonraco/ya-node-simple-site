@@ -1,6 +1,7 @@
+import { APP_INITIALIZER, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { DRToolsModule } from 'ng-drtools';
-import { NgModule, APP_INITIALIZER } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppInitFactory } from './app.init';
 
@@ -18,6 +19,7 @@ import { PagesModule } from './pages/pages.module';
         BasicsModule,
         BrowserModule,
         DRToolsModule,
+        HttpClientModule,
         PagesModule,
     ],
     providers: [
