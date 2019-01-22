@@ -80,16 +80,15 @@ loadingSteps.push(async () => {
     const manager = new TasksManager(path.join(__dirname, 'includes/tasks'), {}, global.configs);
     await manager.load();
 });
-/// / @TODO wait until drtools is compatible with koa.js in this aspect.
-/// / //
-/// / // Loading DRTools mock-endpoints.
-/// / loadingSteps.push(async () => {
-/// /     const endpoints = new EndpointsManager({
-/// /         directory: path.join(__dirname, 'includes/mock-endpoints'),
-/// /         uri: 'mock-api/v1.0',
-/// /     }, global.configs);
-/// /     global.koaApp.use(endpoints.provide());
-/// / });
+//
+// Loading DRTools mock-endpoints.
+loadingSteps.push(async () => {
+    const endpoints = new EndpointsManager({
+        directory: path.join(__dirname, 'includes/mock-endpoints'),
+        uri: 'mock-api/v1.0',
+    }, global.configs);
+    global.koaApp.use(endpoints.provide());
+});
 //
 // Setting static folders.
 loadingSteps.push(async () => {
