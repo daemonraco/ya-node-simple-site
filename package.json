@@ -1,0 +1,47 @@
+{
+    "name": "ya-node-simple-site",
+    "version": "1.0.0",
+    "description": "Basic template for a site using node.js, koa.js, Angular, Bootstrap, knex.js, bookshelf.js and DRTools",
+    "main": "server.js",
+    "scripts": {
+        "lint": "eslint . --fix || true",
+        "start": "node server.js",
+        "start:live": "nodemon server.js",
+        "ui:build": "cd ui && npm run build",
+        "ui:live": "cd ui && npm run start:insecure"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/daemonraco/ya-node-simple-site.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/daemonraco/ya-node-simple-site/issues"
+    },
+    "homepage": "https://github.com/daemonraco/ya-node-simple-site#readme",
+    "dependencies": {
+        "bookshelf": "^0.14.2",
+        "chalk": "^2.4.2",
+        "drtools": "^0.7.3",
+        "fs-extra": "^7.0.1",
+        "http-status-codes": "^1.3.0",
+        "knex": "^0.16.3",
+        "koa": "^2.6.2",
+        "koa-body": "^4.0.6",
+        "koa-router": "^7.4.0",
+        "koa-send": "^5.0.0",
+        "koa-static": "^5.0.0",
+        "sqlite3": "^4.0.6"
+    },
+    "devDependencies": {
+        "eslint": "^5.12.1",
+        "eslint-config-standard": "^12.0.0",
+        "eslint-plugin-import": "^2.15.0",
+        "eslint-plugin-node": "^8.0.1",
+        "eslint-plugin-promise": "^4.0.1",
+        "eslint-plugin-standard": "^4.0.0",
+        "nodemon": "^1.18.9"
+    }
+}

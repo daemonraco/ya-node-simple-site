@@ -1,0 +1,6 @@
+{
+    "ignore": [
+        "ui/**/*",
+        "webtoapi-cache/**/*"
+    ]
+}

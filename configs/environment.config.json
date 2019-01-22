@@ -1,0 +1,7 @@
+{
+    "$exports": {},
+    "$pathExports": {},
+    "drtools": {
+        "webUi": true
+    }
+}
