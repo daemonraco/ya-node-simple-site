@@ -36,6 +36,11 @@ loadingSteps.push(async () => {
     global.koaApp.use(global.configs.publishExportsForKoa());
 });
 //
+// Setting up a logs manager.
+loadingSteps.push(async () => {
+    require('./includes/logger');
+});
+//
 // Loading parser.
 loadingSteps.push(async () => {
     global.koaApp.use(koaBody());
