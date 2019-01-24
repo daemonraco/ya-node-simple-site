@@ -87,7 +87,7 @@ loadingSteps.push(async () => {
         directory: path.join(__dirname, 'includes/mock-endpoints'),
         uri: 'mock-api/v1.0',
     }, global.configs);
-    global.koaApp.use(endpoints.provide());
+    global.koaApp.use(endpoints.provideForKoa());
 });
 //
 // Setting static folders.
