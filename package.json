@@ -27,7 +27,7 @@
         "drtools": "^0.7.11",
         "fs-extra": "^7.0.1",
         "http-status-codes": "^1.4.0",
-        "knex": "^0.16.5",
+        "knex": "^0.19.5",
         "koa": "^2.11.0",
         "koa-body": "^4.1.1",
         "koa-router": "^7.4.0",
